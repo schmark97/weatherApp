@@ -2,9 +2,10 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
-    background: url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed #000; 
+    background: url("../images/background.jpeg") no-repeat center center fixed #000; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -55,8 +56,7 @@ h1{
     border-radius: 4%;
 }
 .weather-body { 
-    background: url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed #000; 
-    -webkit-background-size: cover;
+     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
