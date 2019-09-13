@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Error</title>
+</head>
+<body class="error-body">
+    <div class="error-container">
+        <h1>Error</h1>
+        <h2 class="error-code"><%= status %></h2>
+    </div>
+    <div class="error-city-container">
+            <form  method="post">
+              <h2>Please try a different city:</h2>
+              <input type="text" name="city" placeholder="City" class="home-city-name">
+              <input type="submit" value="Submit" class="home-submit-button">
+            </form>
+    </div>
+</body>
+</html>

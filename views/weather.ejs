@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Weather</title>
+</head>
+<body class= weather-body>
+    <div class="city-container">
+            <form  method="post">
+                <div class="input-container">
+                    <h2>New city: </h2>
+                    <input type="text" name="city" placeholder="City" class="city-name">
+                    <input type="submit" value="Submit" class="submit-button">
+                </div>
+            </form>
+    </div>
+    
+    <div class="container">
+        <% var ind = 0; %>
+        <% for(var j = 0; j < entries.length; j++) { %>
+        <table class="weather-forecast">
+            <tbody>
+                <tr class="weather-forecast-items">
+                    <% for(var i = 0; i < entries[j]; i++) { %>
+                        <tr class="weather-forecast-items">
+                            <td class="weather-forecast-list-item">
+                                <table class="weather-forecas-sub-table">
+                                    <tbody>   
+                                         <%if (ind == 0) { %>
+                                        <tr>
+                                           <td><h2> <%= dates[ind] %></h2></td>
+                                        </tr>
+                                        <% } %>
+                                        <%if (ind > 0 && dates[ind] != dates[ind-1]) { %>
+                                        <tr>
+                                            <td><h2> <%= dates[ind] %> </h2></td>                                         
+                                        </tr>  
+                                        <% } %>                     
+                                        <td class="hour-logo">
+                                            <%= hours[ind] %> 
+                                            <img src="http://openweathermap.org/img/wn/<%= icons[ind] %>@2x.png" alt="icon">
+                                        </td>
+                                      
+                                        <td class="weather-forecast-subitem">
+                                            Temperature: <%= temp[ind] %> &#8451;
+                                            <br>
+                                            Descripion: <%= descriptions[ind] %>
+                                        </td>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <%  ind = ind+1; %>
+                    <% } %>
+                </tr>
+            </tbody>
+        </table>
+        <% } %>
+    </div>
+</body>
+</html>

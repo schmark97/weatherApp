@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    background: url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: white;
+    font-size: 1.2em; 
+}
+
+
+h1{
+    font-size: 80px;
+}
+.home-city-container, .error-city-container{
+    position: relative;
+    top: 320px;
+    margin: auto;
+    height: 6em;
+    width: 30em;
+}
+
+.home-city-name{
+    width: 80%;
+    height: 2em;
+    position: relative;
+    left: 10px;
+    border: none;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 4%;
+    color: white;
+    font-size: 25px;
+}
+
+.home-submit-button{
+    width: 15%;
+    height: 2em;
+    position: relative;
+    right: 80px;
+    top: 55px;
+    background-color: rgba(0,0,0, .8);
+    font-family: 'Saira Extra Condensed', sans-serif;
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 4%;
+}
+.weather-body { 
+    background: url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.hour-logo{
+    display: flex;
+   
+}
+
+.weather-forecast{
+    border-collapse: collapse;
+    width: 300px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: #ddd
+}
+
+.weather-forecast-items{
+    border: 1px solid #ddd;
+    background-color: rgba(0,0,0,.7);
+    width: 100px;
+} 
+
+.city-container{
+    margin-left: 4em;
+    color: rgba(0,0,0,.7);
+  
+    width: 30%;
+    height: 3em;
+    
+}
+
+.city-name{
+  width: auto;
+  height: 2.5em;
+  box-sizing: border-box;
+  position: relative;
+    top: 9px;
+    left: 15px;
+    
+}
+
+
+.input-container{
+    display: flex;
+ 
+}
+
+.submit-button{
+    background-color: rgba(0,0,0,0.7);
+    width: 2.5em;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    height: 1.6em;
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4%;
+    position: relative;
+    top: 9px;
+    left: 20px;
+
+}
+
+.error-container{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    position: relative;
+    margin: auto;
+    top: 300px;
+}
+
+
+.error-code{
+    position: relative;
+    top: 45px;
+}
+@media screen and (max-width: 992px) {
+  
+    h1{
+        font-size: 50px;
+    }
+    .home-city-container, .error-city-container{
+        position: relative;
+        top: 200px;
+        margin: auto;
+        height: 6em;
+        width: 15em;
+    }
+    
+
+    .error-container{
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        position: relative;
+        margin: auto;
+        top: 160px;
+    }
+    
+    .home-city-name{
+        width: 100%;
+        height: 2em;
+        position: relative;
+        left: 10px;
+        border: none;
+        background-color: rgba(0,0,0,.8);
+        border-radius: 4%;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .home-submit-button{
+        width: 20%;
+        height: 2em;
+        position: relative;
+        left: 240px;
+        top: 5px;
+        background-color: rgba(0,0,0, .8);
+        font-family: 'Saira Extra Condensed', sans-serif;
+        border: none;
+        color: white;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        font-size: 22px;
+        border-radius: 4%;
+    }
+
+    .city-container{
+        margin-left: 0;
+        display: flex;
+        width: 330px;
+        margin-bottom: 10px;
+    }
+    .container {
+        display: inline;
+      }
+
+    .weather-forecast{
+        border-collapse: collapse;
+        width: 330px;
+    }
+
+    .weather-body{
+        margin: 8%;
+    }
+  }
